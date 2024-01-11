@@ -23,7 +23,7 @@ function MainHeader(){
 
 function SubHeader(){
   return (
-    <p>This is an exciting course</p>
+    <p className="text-primary">This is an exciting course</p>
   )
 }
 
