@@ -20,11 +20,12 @@ function SubHeader(){
   )
 }
 
+//opening and closing tag
 function Header() {
   return(
     <div>
-      <MainHeader/>
-      <SubHeader/>
+      <MainHeader></MainHeader> 
+      <SubHeader></SubHeader>
     </div>
   )
 }
