@@ -19,4 +19,10 @@ function MainBody() {
     </div>
   );
 }
-root.render(<MainBody/>)
+root.render(
+  <div>
+    <MainBody />
+    <MainBody />
+    <p>Thank you.</p>
+  </div>
+); // The react '.render' can only accept one main wrapper parent element i.e the div element in this code wraps the mainbody and the p element in order for it to work properly.
