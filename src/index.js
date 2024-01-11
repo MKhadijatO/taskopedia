@@ -46,7 +46,7 @@ function MainBody() {
 
 function Footer(){
   return(
-    <p>Happy Coding</p>
+    <p style={{color:"white", backgroundColor:"blue",textAlign:"center"}}>Happy Coding</p> //inline styling takes doule curly bracket i.e style={{style prop here}} not a double quotation sign ""
   );
 };
 
