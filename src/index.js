@@ -6,9 +6,26 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //   <div>Hello!</div>
 // );
 
-function Header(){
+
+
+function MainHeader(){
   return (
     <h1>REACT COURSE</h1>
+  )
+}
+
+function SubHeader(){
+  return (
+    <p>This is an exciting course</p>
+  )
+}
+
+function Header() {
+  return(
+    <div>
+      <MainHeader/>
+      <SubHeader/>
+    </div>
   )
 }
 
@@ -29,8 +46,9 @@ function MainBody() {
 function Footer(){
   return(
     <p>Happy Coding</p>
-  )
-}
+  );
+};
+
 root.render(
   <div>
     <Header />
@@ -38,15 +56,3 @@ root.render(
     <Footer/>
   </div>
 ); // The react '.render' can only accept one main wrapper parent element i.e the div element in this code wraps the mainbody and the p element in order for it to work properly.
-
-/****OR
-
-root.render(
-  <div>
-    <h1>REACT COURSE</h1>
-    <MainBody />
-    <p>Happy Coding</p>
-  </div>
-); 
-
-***/
