@@ -19,4 +19,4 @@ function MainBody() {
     </div>
   );
 }
-root.render(MainBody())
+root.render(<MainBody/>)
