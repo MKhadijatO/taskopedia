@@ -1,5 +1,6 @@
-import React from "react";
+// import React from "react";
 import ReactDOM from "react-dom/client";
+import "./CSS/style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -23,7 +24,7 @@ function MainHeader(){
 
 function SubHeader(){
   return (
-    <p className="text-primary">This is an exciting course</p>
+    <p className="heading1" >This is an exciting course</p>
   )
 }
 
