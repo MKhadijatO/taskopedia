@@ -39,3 +39,14 @@ root.render(
   </div>
 ); // The react '.render' can only accept one main wrapper parent element i.e the div element in this code wraps the mainbody and the p element in order for it to work properly.
 
+/****OR
+
+root.render(
+  <div>
+    <h1>REACT COURSE</h1>
+    <MainBody />
+    <p>Happy Coding</p>
+  </div>
+); 
+
+***/
