@@ -6,11 +6,18 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //   <div>Hello!</div>
 // );
 
+//another styling method forlarge vol styling
 
+const mainHeaderStyle = {
+  color: "white",
+  backgroundColor: "purple",
+  fontWeight: "bold",
+  textAlign: "center"
+}
 
 function MainHeader(){
   return (
-    <h1>REACT COURSE</h1>
+    <h1 style={mainHeaderStyle}>REACT COURSE</h1>
   )
 }
 
