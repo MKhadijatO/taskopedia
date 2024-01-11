@@ -1,14 +1,11 @@
-// import React from "react";
+
 import ReactDOM from "react-dom/client";
-import "./CSS/style.css";//important for linking css file
+import "./CSS/style.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <div>Hello!</div>
-// );
 
 //another styling method forlarge vol styling
-
 const mainHeaderStyle = {
   color: "white",
   backgroundColor: "purple",
@@ -28,7 +25,6 @@ function SubHeader(){
   )
 }
 
-//opening and closing tag
 function Header() {
   return(
     <div>
@@ -39,22 +35,26 @@ function Header() {
 }
 
 function MainBody() {
-  //MainBody is written in pascal case. All react components are written in PASCAL CASE.
+  const courseTopic = "React Js"
+  const totalLecture = 3
   return (
     <div>
-      <p>In this course, we will learn react js by building Taskopedia</p>
+      <p>In this course, we will learn {courseTopic} by building Taskopedia</p>
+      <p>Total Lecture - {totalLecture}</p>
       <ul>
-        <li>Send details</li>
-        <li>Contact the seamstress</li>
-        <li>Watch the trouser video</li>
+        <li>Basic Foundation</li>
+        <li>Functional and Class Components</li>
       </ul>
+      {/* <div>
+        Enter Task : <input maxLength={10} readOnly={false} placeholder="Read"></input>
+      </div> */}
     </div>
   );
 }
 
 function Footer(){
   return(
-    <p style={{color:"white", backgroundColor:"blue",textAlign:"center"}}>Happy Coding</p> //inline styling takes doule curly bracket i.e style={{style prop here}} not a double quotation sign ""
+    <p style={{color:"white", backgroundColor:"blue",textAlign:"center"}}>Happy Coding</p>
   );
 };
 
@@ -64,4 +64,4 @@ root.render(
     <MainBody />
     <Footer/>
   </div>
-); // The react '.render' can only accept one main wrapper parent element i.e the div element in this code wraps the mainbody and the p element in order for it to work properly.
+); 
