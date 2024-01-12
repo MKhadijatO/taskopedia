@@ -45,11 +45,31 @@ function MainBody() {
         <li>Basic Foundation</li>
         <li>Functional and Class Components</li>
       </ul>
-      {/* <div>
+      <div>
         Enter Task : <input maxLength={10} readOnly={false} placeholder="Read"></input>
-      </div> */}
+      </div>
     </div>
   );
+}
+
+function Students(){
+  const fullName = "John Damilola";
+  const CodingExp = 2;
+
+  return (
+    <div className="container p4">
+      <div className="row" >Students Enrolled</div>
+      <div className="ro border">
+        <div className="col-2">
+          <img src={`https://ui-avatars.com/api/?name=${fullName}`} className="w-100"></img>
+        </div>
+        <div className="col-10">
+          {fullName} <br/>
+          Coding Experience: {CodingExp} years
+        </div>
+      </div>
+    </div>
+  )
 }
 
 function Footer(){
