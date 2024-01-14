@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import "./CSS/style.css";
-import Header from "./header";
+import Header from "./Header";
+import Student from "./Student";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -17,38 +18,14 @@ function MainBody() {
         <li>Basic Foundation</li>
         <li>Functional and Class Components</li>
       </ul>
-      <div>
+      {/* <div>
         Enter Task :{" "}
         <input maxLength={10} readOnly={false} placeholder="Read"></input>
-      </div>
+      </div> */}
     </div>
   );
 }
 
-function Students() {
-  const fullName = "John Damilola";
-  const codingExp = 3;
-
-  return (
-    <div className="container p4">
-      <div className="row">Students Enrolled</div>
-      <div className="row border">
-        <div className="col-2">
-          <img
-            src={`https://ui-avatars.com/api/?name=${fullName}`}
-            alt="display-avatar"
-            className="w-100"
-          ></img>
-        </div>
-        <div className="col-10">
-          {fullName}
-          <br />
-          Coding Experience: {codingExp} years
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function Footer() {
   return (
@@ -59,12 +36,13 @@ function Footer() {
 }
 
 root.render(
-  <div>
+  <div className="container">
     <Header />
     <MainBody />
-    <Students />
-    <Students />
-    <Students />
+    <div className="row">Students Enrolled</div>
+    <Student name="Okafor Nonso" experience={2} />
+    <Student name="Olabisi Fatimah" experience={1} />
+    <Student name="Wale Akanbi" experience={5} />
     <Footer />
   </div>
 );
