@@ -1,4 +1,3 @@
-import { faker } from '@faker-js/faker';
 
 export default function Student(props) {
   return (
@@ -6,7 +5,7 @@ export default function Student(props) {
       <div className="row border">
         <div className="col-2">
           <img
-            src={faker.image.avatar()}
+            src={props.headshot}
             className="w-100 py-2"
             alt="display-avatar"
           ></img>
