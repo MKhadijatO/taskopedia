@@ -52,20 +52,25 @@ function MainBody() {
   );
 }
 
+
 function Students(){
   const fullName = "John Damilola";
-  const CodingExp = 2;
+  const codingExp = 3;
 
   return (
     <div className="container p4">
       <div className="row" >Students Enrolled</div>
-      <div className="ro border">
+      <div className="row border">
         <div className="col-2">
-          <img src={`https://ui-avatars.com/api/?name=${fullName}`} className="w-100"></img>
+          <img 
+          src={`https://ui-avatars.com/api/?name=${fullName}`} 
+          alt="display-avatar" 
+          className="w-100"></img>
         </div>
         <div className="col-10">
-          {fullName} <br/>
-          Coding Experience: {CodingExp} years
+          {fullName} 
+          <br/>
+          Coding Experience: {codingExp} years
         </div>
       </div>
     </div>
@@ -82,6 +87,7 @@ root.render(
   <div>
     <Header />
     <MainBody />
+    <Students/>
     <Footer/>
   </div>
 ); 
