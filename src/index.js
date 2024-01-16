@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./CSS/style.css";
 import Header from "./Header";
 import Student from "./Student";
+import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -26,14 +27,6 @@ function MainBody() {
   );
 }
 
-
-function Footer() {
-  return (
-    <p style={{ color: "white", backgroundColor: "blue", textAlign: "center" }}>
-      Happy Coding
-    </p>
-  );
-}
 
 root.render(
   <div className="">
