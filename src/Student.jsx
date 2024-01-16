@@ -1,4 +1,3 @@
-
 export default function Student(props) {
   return (
     <div className="container p4">
@@ -18,4 +17,4 @@ export default function Student(props) {
       </div>
     </div>
   );
-}
+};

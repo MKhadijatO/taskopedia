@@ -1,3 +1,5 @@
+import logo from "./images/react.png";
+
 const mainHeaderStyle = {
   color: "white",
   backgroundColor: "purple",
@@ -6,7 +8,12 @@ const mainHeaderStyle = {
 };
 
 function MainHeader() {
-  return <h1 style={mainHeaderStyle}>REACT COURSE</h1>;
+  return (
+    <div className="pt-3 py-1 pl-2" style={{backgroundColor: "navy"}}>
+      <img src={logo} style={{height: "35px", verticalAlign: "top"}}></img>
+      <span className="h2 pt-4 text-white-50"> REACT COURSE - TaskOpedia</span>
+    </div>  
+  )
 }
 
 function SubHeader() {
