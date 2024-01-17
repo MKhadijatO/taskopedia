@@ -9,10 +9,13 @@ export default function Student(props) {
             alt="display-avatar"
           ></img>
         </div>
-        <div className="col-10">
+        <div className="col-8">
           {props.name}
           <br />
           Coding Experience: {props.experience} years
+        </div>
+        <div className="col-2">
+            {props.children}
         </div>
       </div>
     </div>
