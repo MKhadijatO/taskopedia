@@ -8,9 +8,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //another styling method forlarge vol styling
 
 root.render(
-  <div style={{backgroundColor: "black", color: "grey"}}>
+  <div style={{ backgroundColor: "black", color: "grey" }}>
     <Header />
-    <MainBody />
+    <div className="px-4">
+      <MainBody />
+    </div>
     <Footer />
   </div>
 );
