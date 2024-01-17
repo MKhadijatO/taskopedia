@@ -2,7 +2,7 @@ export default function Student(props) {
   return (
     <div className="container p-1">
       <div className="row border">
-        <div className="col-2">
+        <div className="col -2">
           <img
             src={props.headshot}
             className="w-100 py-2"

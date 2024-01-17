@@ -1,4 +1,4 @@
-import logo from "./images/react.png";
+import logo from "../images/react.png";
 
 const mainHeaderStyle = {
   color: "white",
