@@ -4,6 +4,8 @@ import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
 import MainBody from "./MainBody";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+ 
+
 
 //another styling method forlarge vol styling
 
@@ -14,5 +16,7 @@ root.render(
       <MainBody />
     </div>
     <Footer />
-  </div>
+  </div>  
 );
+
+

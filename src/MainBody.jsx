@@ -1,7 +1,9 @@
+import React from "react";
 import Student from "./Components/Student/Student";
 import StudentReview from "./Components/Student/StudentReview";
 
-export default function MainBody() {
+class MainBody extends React.Component {
+  render() {
   const courseTopic = "React Js";
   const totalLecture = 2;
   return (
@@ -40,5 +42,7 @@ export default function MainBody() {
         headshot="https://api.lorem.space/image/face?w=150&h=152"
       />
     </div>
-  );
+  );}
 }
+
+export default MainBody
